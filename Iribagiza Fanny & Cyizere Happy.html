@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./Background.jpg);
+            background-size: cover;
+        }
+        .Navbar{
+            width: 100%;
+            height: 80px;
+            box-sizing: border-box;
+            background-color: rgba(0,0,0,0.7);
+            padding-left: 30px;
+            position: relative;
+        }
+        .logo h1{
+            color: white;
+            padding-top: 20px;
+        }
+        .links{
+            width: 600px;
+            margin: auto;
+            height: 30px;
+            position: absolute;
+            top: 20px;
+            left: 350px;
+         }
+        .links ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .links a{
+            text-decoration: none;
+            color: white;
+        }
+        .links li{
+            display: inline-block;
+            width: 100px;
+            border-radius: 30px;
+            padding: 10px;
+            text-align: center;
+            height: 25px;
+            transition: 0.5s ease-in-out;
+        }
+        .links li:hover{
+            background-color: rgba(0,0,0,0.4);
+        }
+        .links li.active{
+            background-color: rgba(0,0,0,0.9);
+        }
+        button{
+            margin-right: 90px;
+            outline: none;
+            border: none;
+            width: 80px;
+            height: 32px;
+            border-radius: 0 10px;
+            background-color: rgb(185, 184, 167);
+        }
+        .drop-down{
+            position: relative;
+            float: right;
+            
+        }
+        .dropBtn{
+            cursor: pointer;
+        }
+        .content{
+            position: absolute;
+            min-width: 160px;
+            background-color: rgba(0,0,0,0.6);
+            border-radius: 0 10px;
+            height: 150px;
+            margin-right: 50px;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .drop-down:hover .content {
+            opacity: 1;
+         }
+        .content a{
+            text-decoration: none;
+            display: block;
+            padding: 9px 16px;
+            color: white;
+        }
+        .content a:hover{
+            background-color: rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="Navbar">
+        <div class="logo">
+            <h1>Group_Work</h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Our services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="drop-down">
+            <button class="dropBtn">Visit Us</button>
+            <div class="content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+        </div>
+        
+        
+    </nav>
+</body>
+</html>
